@@ -24,6 +24,7 @@ Options:
 
 ### Keybindings
 #### ~/.i3/config
-$ bindsym XF86MonBrightnessUp exec $HOME/bin/backlight --increase
-$ bindsym XF86MonBrightnessDown exec $HOME/bin/backlight --decrease
+bindsym XF86MonBrightnessUp exec $HOME/bin/backlight --increase
+
+bindsym XF86MonBrightnessDown exec $HOME/bin/backlight --decrease
 
