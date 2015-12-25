@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/bin/sh
+=======
+#!/usr/bin/env bash
+>>>>>>> ef5026382be959cf9b67e1d10a257bb8a665461c
 #
 # [backlight] - increases or decreases the backlight of your laptop.
 # Uses a quadratic function to determine the size of steps
