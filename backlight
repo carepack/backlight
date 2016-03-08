@@ -38,6 +38,18 @@ usage () {
   echo
 }
 
+bailout () {
+  echo "Error: $@"
+  exit 1
+}
+
+precheck () {
+  hash "$1" >/dev/null 2>&1 || bailout "Please install $1"
+}
+
+precheck xbacklight
+precheck bc
+
 # Get current value
 current="$(xbacklight -get)"
 value="${current%%.*}"
