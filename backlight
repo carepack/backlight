@@ -66,9 +66,11 @@ if [ "$stepsize" -eq 2 ]; then stepsize=1; fi
 # Parse arguments
 case "$1" in
   --increase)
+    echo "Current level: ${current%%.*}, decreasing by $stepsize"
     xbacklight -inc "$stepsize"
   ;;
   --decrease)
+    echo "Current level: ${current%%.*}, decreasing by $stepsize"
     xbacklight -dec "$stepsize"
   ;;
   --get)
